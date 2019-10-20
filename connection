@@ -1,0 +1,4 @@
+cubemax配置外设使能调用头文件在...Inc\Incstm32f4xx_hal_conf.h里
+RTT的设备驱动文件在rt-thread\components\drivers里（.c.h） yaml文件里记得加上所用设备驱动的.c.h
+外设初始化函数启动需在\Libraries\rt-thread\rtconfig.h里definewaishe
+
