@@ -1,0 +1,3 @@
+ RT-Thread提供的 I/O 设备管理接口在device.c内
+ rt_device_open设置串口接收和发送的打开模式默认轮询模式
+ serial.h里进行串口配置
