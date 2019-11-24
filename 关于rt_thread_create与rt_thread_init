@@ -4,4 +4,5 @@ RT-Thread中支持静态和动态两种定义方式。rt_thread_init对应静态
 而只能用rt_thread_detach将线程控制块从对象管理器脱离。
 使用动态定义方式rt_thread_create时，系统会动态申请线程控制块和堆栈空间，当不需要使用该线程时，
 调用rt_thread_delete将这段申请的内存空间释放。
+parameter线程入口函数所传入的参数，不需要即设置为0；
  
