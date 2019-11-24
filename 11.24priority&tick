@@ -1,0 +1,12 @@
+线程总数只和具体硬件平台的内存有关
+
+priority：
+RT-Thread最大支持256个priority(0最高，最低priority留给空闲线程)，可创建N个priority可通过rt-config.h中的#define RT_THREAD_PRIORITY_MAX 32
+修改最大支持优先级；（默认MAX32）
+
+实时性高的系统use高priority
+
+tick：
+只在priority相同时起作用 系统按tick大小 轮流调度线程
+起约束线程单词运行时长的作用（单位：一个系统节拍 OS Tick）
+》》相同priority的任务轮流占有cpu
